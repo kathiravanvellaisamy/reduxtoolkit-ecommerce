@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section style={{ backgroundColor: "#f8f8f8" }}>
       <div className="container d-flex flex-row    align-items-center">
-        <div>
+        <div className="m-4 m-md-0">
           <h1 className="display-4 font-weight-bold text-secondary">
             INTRODUCING.... *DRUM ROLL*
           </h1>
