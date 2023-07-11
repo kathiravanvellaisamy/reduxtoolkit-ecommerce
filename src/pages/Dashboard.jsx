@@ -1,17 +1,21 @@
 import React from "react";
 import { productList } from "../data/store";
 import Product from "../components/Product";
+import Hero from "../components/Hero";
 
 const Dashboard = () => {
   return (
     <>
-      <div className="row">
-        <h2 className="display-5  mt-3 mb-3 text-secondary">
-          For the Foodie in You!
-        </h2>
-        {productList.map((product) => (
-          <Product product={product} />
-        ))}
+      <Hero />
+      <div className="container">
+        <div className="row">
+          <h2 className="display-5 mt-3 mb-3 text-secondary   pb-2  ">
+            For the Foodie in You!
+          </h2>
+          {productList.map((product) => (
+            <Product product={product} />
+          ))}
+        </div>
       </div>
     </>
   );

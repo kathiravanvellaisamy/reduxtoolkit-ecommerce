@@ -1,8 +1,8 @@
 import React from "react";
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { LuPhoneCall } from "react-icons/lu";
 import { FaPizzaSlice } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -20,11 +20,11 @@ const Header = () => {
             placeholder="What would you like to eat today?"
           />
         </div>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between  align-items-center">
           <div>
-            <p className="text-light text-decoration-none m-3 ">
-              <LuPhoneCall size={24} /> 07738383000
-            </p>
+            <Link to="/" className="text-light text-decoration-none m-3 ">
+              Home
+            </Link>
           </div>
           <AiOutlineShoppingCart
             size={24}

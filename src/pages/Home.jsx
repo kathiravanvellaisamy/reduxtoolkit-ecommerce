@@ -1,17 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
 import Footer from "../components/Footer";
+import Product from "./Product";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <div className="container">
+
+      <div>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/product/:id" element={<Product />} />
         </Routes>
       </div>
       <Footer />
