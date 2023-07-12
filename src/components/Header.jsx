@@ -1,10 +1,11 @@
-import React from "react";
-
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaPizzaSlice } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const list = useSelector((state) => state.cart.list);
   return (
     <header className="bg-dark p-2">
       <div className="container d-flex flex-row justify-content-between align-items-center">
@@ -30,7 +31,18 @@ const Header = () => {
             size={24}
             className="text-light text-decoration-none m-3 "
             style={{ cursor: "pointer" }}
+            onClick={() => navigate("/cart")}
           />
+          <span
+            className="badge badge-success "
+            style={{
+              backgroundColor: "orange",
+              marginLeft: "-20px",
+              marginTop: "-22px",
+            }}
+          >
+            {list.length}
+          </span>
         </div>
       </div>
     </header>
