@@ -13,7 +13,7 @@ const Dashboard = () => {
             For the Foodie in You!
           </h2>
           {productList.map((product) => (
-            <Product product={product} />
+            <Product product={product} key={product.id} />
           ))}
         </div>
       </div>

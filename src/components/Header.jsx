@@ -14,7 +14,7 @@ const Header = () => {
             <FaPizzaSlice /> FACTORY
           </h3>
         </div>
-        <div className="d-none d-sm-block w-50">
+        <div className="d-none d-md-block w-50">
           <input
             type="search"
             className="form-control"

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Product from "./Product";
 import Cart from "./Cart";
+import ScrollToTop from "./ScrollToTop";
 
 const Home = () => {
   return (
@@ -11,6 +12,9 @@ const Home = () => {
       <Header />
 
       <div>
+        <ScrollToTop>
+          <div />
+        </ScrollToTop>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/product/:id" element={<Product />} />

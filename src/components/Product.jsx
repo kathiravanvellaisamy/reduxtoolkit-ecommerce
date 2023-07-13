@@ -24,7 +24,7 @@ const Product = ({ product }) => {
           <button className="btn pizza-button">Buy Now</button>
         </div>
         <div className="mt-2">
-          <span class="badge badge-light text-dark border">
+          <span className="badge badge-light text-dark border">
             {product.category}
           </span>
         </div>
